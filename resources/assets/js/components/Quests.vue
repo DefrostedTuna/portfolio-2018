@@ -6,11 +6,11 @@
             <div class="quests--flex">
                 <div class="quest-list">
                     <template v-for="quest in quests">
-                        <span class="quest-list__title" @click="setSelectedQuest(quest.project)">{{ quest.questName }}</span>
+                        <a href="#quests" v-smooth-scroll class="quest-list__title" @click="setSelectedQuest(quest.project)">{{ quest.questName }}</a>
                     </template>
                     <a class="quest-list__title-github" target="_blank" href="https://github.com/DefrostedTuna?tab=repositories">More quests...</a>
                 </div>
-                <div class="quest-details">
+                <div id="quests" class="quest-details">
                     <h2 class="quest-details__title">{{ selectedQuest.questName }}</h2>
 
                     <span class="quest-details__project-name--title">Project name</span>
@@ -329,7 +329,8 @@
         padding-top: 8px;
         padding-bottom: 8px;
         border-bottom: 1px solid #0f3147;
-        color: #0f3147;
+        color: #0f3147 !important;
+        text-decoration: none;
 
         &:hover {
             cursor: pointer;
@@ -447,6 +448,10 @@
         border-bottom: none;
         color: #0f3147 !important;
         text-decoration: none;
-        font-size: 22px;
+        font-size: 16px;
+
+        @media(min-width: 801px) {
+            font-size: 22px;
+        }
     }
 </style>

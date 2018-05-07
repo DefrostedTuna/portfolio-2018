@@ -8,7 +8,7 @@
                class="header-quote__find-out-more">Want to know more?</a>
             <br>
             <a href="/files/resume2018.pdf"
-               class="header-quote__find-out-more">View my resume</a>
+               class="header-quote__view-resume">View my resume</a>
         </div>
     </div>
 </template>
@@ -38,6 +38,10 @@
         padding: 16px;
         margin-top: 50px;
         text-align: center;
+
+        @media(max-width: 400px) {
+            margin-top: 8px;
+        }
 
         @media(max-height: 361px) {
             margin-top: 8px;
@@ -69,12 +73,14 @@
         }
     }
 
-    .header-quote__find-out-more {
+    .header-quote__find-out-more,
+    .header-quote__view-resume {
         display: inline-block;
         margin-top: 16px;
         border: 3px solid #0f3147;
         padding: 8px;
         color: #0f3147;
+        background: #dae6f2;
         text-decoration: none;
         transition: color .5s ease, background .5s ease;
 
