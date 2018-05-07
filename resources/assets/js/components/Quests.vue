@@ -155,7 +155,7 @@
                     },
                     {
                         project: 'DERP',
-                        questName: 'What shall we call this one?',
+                        questName: 'What Shall We Call This One?',
                         description: [
                             `Currently a work in progress, and also an unofficial name, DERP is an acronym for
                             Dynamic Employee Review Program. This is designed to work alongside LUAU as a hub for
