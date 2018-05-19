@@ -73,11 +73,20 @@
                         text: "Thank you for your submission! I'll get back to you soon!"
                     });
                 }).catch(errors => {
-                    this.showSnackbar({
-                        text: "Oops! Something went wrong... That's not good. You could always email me directly. " +
-                              "You can find my direct email in my resume. I offer my apologies!",
-                        timeout: 12000,
-                    });
+                    if (errors.message == "The given data was invalid.") { // Hard check for input errors
+                        this.showSnackbar({
+                            text: "Oops! There was a problem submitting the form. " +
+                            "Please check the inputs to make sure that everything has been filled out properly.",
+                            timeout: 6000,
+                        });
+                    } else {
+                        this.showSnackbar({
+                            text: "Oops! Something went wrong... That's not good. You could always email me directly. " +
+                            "You can find my direct email in my resume. I offer my apologies!",
+                            timeout: 12000,
+                        });
+                    }
+
                 });
             }
         },
