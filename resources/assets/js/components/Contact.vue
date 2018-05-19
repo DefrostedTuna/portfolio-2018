@@ -69,12 +69,10 @@
             ]),
             submitForm() {
                 this.form.post('/super-secret-email-route').then(response => {
-                    console.log(response);
                     this.showSnackbar({
                         text: "Thank you for your submission! I'll get back to you soon!"
                     });
                 }).catch(errors => {
-                    console.log(errors);
                     this.showSnackbar({
                         text: "Oops! Something went wrong... That's not good. You could always email me directly. " +
                               "You can find my direct email in my resume. I offer my apologies!",
