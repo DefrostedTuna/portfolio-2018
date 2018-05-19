@@ -5,7 +5,7 @@
             <div class="character-card--wrap">
                 <character-card name="Rick Bennett"
                                 image-url="https://avatars2.githubusercontent.com/u/5687508?v=4&s=400"
-                                character-class="Ground Control Engineer"
+                                character-class="Software Engineer"
                                 birthday="11-06-1988"
                                 hp-current="700"
                                 hp-max="756"
