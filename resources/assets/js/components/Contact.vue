@@ -82,7 +82,7 @@
                     } else {
                         this.showSnackbar({
                             text: "Oops! Something went wrong... That's not good. You could always email me directly. " +
-                            "You can find my direct email in my resume. I offer my apologies!",
+                            "You can find my direct email in my resume.",
                             timeout: 12000,
                         });
                     }
