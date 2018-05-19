@@ -17,10 +17,10 @@
 
             <div class="about-me__description--wrap">
                 <p>
-                    An experienced software engineer with a passion for innovation.
+                    An experienced software engineer with four years of web development under his belt and a passion for innovation.
                     The world around him is constantly changing and it's his job to make sure he
                     keeps up with it and delivers the products needed in this day and age.
-                    Most of his current experience is in developing internal applications to
+                    Most of his current experience is in developing internal applications using PHP and the open source web stack to
                     assist in the day to day operations of a repair facility, with a few personal projects
                     thrown in here and there. He's built applications ranging from simple reporting dashboards,
                     to an entire ecosystem that saved his company close to one million dollars a year in expenses.

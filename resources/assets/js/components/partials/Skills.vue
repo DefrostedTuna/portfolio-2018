@@ -47,7 +47,7 @@
             <div class="skill__item">
                 <exp-bar label="Bash"
                          :width="90"
-                         values="5+ years / Very strong"
+                         values="5+ years / Strong"
                          color="blue"></exp-bar>
             </div>
 
